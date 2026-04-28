@@ -96,6 +96,8 @@ pip install -r requirements.txt
 
 Place your Cisco router and switch configuration files inside:
 
+## note: If you have more routers and switches, then go to the main.py file and enter the information of your routers and switches in the Configuration files path.
+
 ```
 sample_configs/
 ```
