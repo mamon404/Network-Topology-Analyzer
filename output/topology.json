@@ -1,0 +1,896 @@
+{
+  "topology": {
+    "devices": [
+      {
+        "hostname": "R1",
+        "type": "router",
+        "interfaces": {
+          "GigabitEthernet0/0/0": {
+            "name": "GigabitEthernet0/0/0",
+            "ip_address": "192.168.1.1",
+            "subnet_mask": "255.255.255.0",
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/0/1": {
+            "name": "GigabitEthernet0/0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/0/2": {
+            "name": "GigabitEthernet0/0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "Serial0/1/0": {
+            "name": "Serial0/1/0",
+            "ip_address": "10.0.13.1",
+            "subnet_mask": "255.255.255.252",
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/1/1": {
+            "name": "Serial0/1/1",
+            "ip_address": "10.0.12.1",
+            "subnet_mask": "255.255.255.252",
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/2/0": {
+            "name": "Serial0/2/0",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/2/1": {
+            "name": "Serial0/2/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Vlan1": {
+            "name": "Vlan1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "10Mbps",
+            "status": "up"
+          }
+        },
+        "ospf_info": {
+          "process_id": "10",
+          "networks": [
+            {
+              "network": "192.168.1.0",
+              "wildcard": "0.0.0.255",
+              "area": "0"
+            },
+            {
+              "network": "10.0.12.0",
+              "wildcard": "0.0.0.3",
+              "area": "0"
+            },
+            {
+              "network": "10.0.13.0",
+              "wildcard": "0.0.0.3",
+              "area": "0"
+            }
+          ]
+        },
+        "networks": [
+          {
+            "ip": "192.168.1.1",
+            "mask": "255.255.255.0",
+            "network": "192.168.1.0"
+          },
+          {
+            "ip": "10.0.13.1",
+            "mask": "255.255.255.252",
+            "network": "10.0.13.0"
+          },
+          {
+            "ip": "10.0.12.1",
+            "mask": "255.255.255.252",
+            "network": "10.0.12.0"
+          }
+        ]
+      },
+      {
+        "hostname": "R2",
+        "type": "router",
+        "interfaces": {
+          "GigabitEthernet0/0/0": {
+            "name": "GigabitEthernet0/0/0",
+            "ip_address": "192.168.2.1",
+            "subnet_mask": "255.255.255.0",
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/0/1": {
+            "name": "GigabitEthernet0/0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/0/2": {
+            "name": "GigabitEthernet0/0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "Serial0/1/0": {
+            "name": "Serial0/1/0",
+            "ip_address": "10.0.12.2",
+            "subnet_mask": "255.255.255.252",
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/1/1": {
+            "name": "Serial0/1/1",
+            "ip_address": "10.0.14.1",
+            "subnet_mask": "255.255.255.252",
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/2/0": {
+            "name": "Serial0/2/0",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/2/1": {
+            "name": "Serial0/2/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Vlan1": {
+            "name": "Vlan1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "10Mbps",
+            "status": "up"
+          }
+        },
+        "ospf_info": {
+          "process_id": "10",
+          "networks": [
+            {
+              "network": "192.168.2.0",
+              "wildcard": "0.0.0.255",
+              "area": "0"
+            },
+            {
+              "network": "10.0.12.0",
+              "wildcard": "0.0.0.3",
+              "area": "0"
+            },
+            {
+              "network": "10.0.14.0",
+              "wildcard": "0.0.0.3",
+              "area": "0"
+            }
+          ]
+        },
+        "networks": [
+          {
+            "ip": "192.168.2.1",
+            "mask": "255.255.255.0",
+            "network": "192.168.2.0"
+          },
+          {
+            "ip": "10.0.12.2",
+            "mask": "255.255.255.252",
+            "network": "10.0.12.0"
+          },
+          {
+            "ip": "10.0.14.1",
+            "mask": "255.255.255.252",
+            "network": "10.0.14.0"
+          }
+        ]
+      },
+      {
+        "hostname": "R3",
+        "type": "router",
+        "interfaces": {
+          "GigabitEthernet0/0/0": {
+            "name": "GigabitEthernet0/0/0",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/0/1": {
+            "name": "GigabitEthernet0/0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/0/2": {
+            "name": "GigabitEthernet0/0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "Serial0/1/0": {
+            "name": "Serial0/1/0",
+            "ip_address": "10.0.13.2",
+            "subnet_mask": "255.255.255.252",
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/1/1": {
+            "name": "Serial0/1/1",
+            "ip_address": "10.0.14.2",
+            "subnet_mask": "255.255.255.252",
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/2/0": {
+            "name": "Serial0/2/0",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Serial0/2/1": {
+            "name": "Serial0/2/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1.544Mbps",
+            "status": "up"
+          },
+          "Vlan1": {
+            "name": "Vlan1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "10Mbps",
+            "status": "up"
+          }
+        },
+        "ospf_info": {
+          "process_id": "10",
+          "networks": [
+            {
+              "network": "10.0.13.0",
+              "wildcard": "0.0.0.3",
+              "area": "0"
+            },
+            {
+              "network": "10.0.14.0",
+              "wildcard": "0.0.0.3",
+              "area": "0"
+            }
+          ]
+        },
+        "networks": [
+          {
+            "ip": "10.0.13.2",
+            "mask": "255.255.255.252",
+            "network": "10.0.13.0"
+          },
+          {
+            "ip": "10.0.14.2",
+            "mask": "255.255.255.252",
+            "network": "10.0.14.0"
+          }
+        ]
+      },
+      {
+        "hostname": "S1",
+        "type": "switch",
+        "interfaces": {
+          "FastEthernet0/1": {
+            "name": "FastEthernet0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/2": {
+            "name": "FastEthernet0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/3": {
+            "name": "FastEthernet0/3",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/4": {
+            "name": "FastEthernet0/4",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/5": {
+            "name": "FastEthernet0/5",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/6": {
+            "name": "FastEthernet0/6",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/7": {
+            "name": "FastEthernet0/7",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/8": {
+            "name": "FastEthernet0/8",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/9": {
+            "name": "FastEthernet0/9",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/10": {
+            "name": "FastEthernet0/10",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/11": {
+            "name": "FastEthernet0/11",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/12": {
+            "name": "FastEthernet0/12",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/13": {
+            "name": "FastEthernet0/13",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/14": {
+            "name": "FastEthernet0/14",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/15": {
+            "name": "FastEthernet0/15",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/16": {
+            "name": "FastEthernet0/16",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/17": {
+            "name": "FastEthernet0/17",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/18": {
+            "name": "FastEthernet0/18",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/19": {
+            "name": "FastEthernet0/19",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/20": {
+            "name": "FastEthernet0/20",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/21": {
+            "name": "FastEthernet0/21",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/22": {
+            "name": "FastEthernet0/22",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/23": {
+            "name": "FastEthernet0/23",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/24": {
+            "name": "FastEthernet0/24",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/1": {
+            "name": "GigabitEthernet0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/2": {
+            "name": "GigabitEthernet0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "Vlan1": {
+            "name": "Vlan1",
+            "ip_address": "192.168.1.1",
+            "subnet_mask": "255.255.255.0",
+            "description": null,
+            "bandwidth": "10Mbps",
+            "status": "up"
+          }
+        },
+        "ospf_info": {},
+        "networks": [
+          {
+            "ip": "192.168.1.1",
+            "mask": "255.255.255.0",
+            "network": "192.168.1.0"
+          }
+        ]
+      },
+      {
+        "hostname": "S2",
+        "type": "switch",
+        "interfaces": {
+          "FastEthernet0/1": {
+            "name": "FastEthernet0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/2": {
+            "name": "FastEthernet0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/3": {
+            "name": "FastEthernet0/3",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/4": {
+            "name": "FastEthernet0/4",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/5": {
+            "name": "FastEthernet0/5",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/6": {
+            "name": "FastEthernet0/6",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/7": {
+            "name": "FastEthernet0/7",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/8": {
+            "name": "FastEthernet0/8",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/9": {
+            "name": "FastEthernet0/9",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/10": {
+            "name": "FastEthernet0/10",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/11": {
+            "name": "FastEthernet0/11",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/12": {
+            "name": "FastEthernet0/12",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/13": {
+            "name": "FastEthernet0/13",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/14": {
+            "name": "FastEthernet0/14",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/15": {
+            "name": "FastEthernet0/15",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/16": {
+            "name": "FastEthernet0/16",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/17": {
+            "name": "FastEthernet0/17",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/18": {
+            "name": "FastEthernet0/18",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/19": {
+            "name": "FastEthernet0/19",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/20": {
+            "name": "FastEthernet0/20",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/21": {
+            "name": "FastEthernet0/21",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/22": {
+            "name": "FastEthernet0/22",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/23": {
+            "name": "FastEthernet0/23",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "FastEthernet0/24": {
+            "name": "FastEthernet0/24",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "100Mbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/1": {
+            "name": "GigabitEthernet0/1",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "GigabitEthernet0/2": {
+            "name": "GigabitEthernet0/2",
+            "ip_address": null,
+            "subnet_mask": null,
+            "description": null,
+            "bandwidth": "1Gbps",
+            "status": "up"
+          },
+          "Vlan1": {
+            "name": "Vlan1",
+            "ip_address": "192.168.2.1",
+            "subnet_mask": "255.255.255.0",
+            "description": null,
+            "bandwidth": "10Mbps",
+            "status": "up"
+          }
+        },
+        "ospf_info": {},
+        "networks": [
+          {
+            "ip": "192.168.2.1",
+            "mask": "255.255.255.0",
+            "network": "192.168.2.0"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "source": "R1",
+        "target": "R2",
+        "bandwidth": "1.544Mbps",
+        "utilization": "0%",
+        "link_type": "ethernet",
+        "interfaces": [
+          {
+            "device": "R1",
+            "interface": "Serial0/1/1",
+            "ip": "10.0.12.1"
+          },
+          {
+            "device": "R2",
+            "interface": "Serial0/1/0",
+            "ip": "10.0.12.2"
+          }
+        ]
+      },
+      {
+        "source": "R1",
+        "target": "R3",
+        "bandwidth": "1.544Mbps",
+        "utilization": "0%",
+        "link_type": "ethernet",
+        "interfaces": [
+          {
+            "device": "R1",
+            "interface": "Serial0/1/0",
+            "ip": "10.0.13.1"
+          },
+          {
+            "device": "R3",
+            "interface": "Serial0/1/0",
+            "ip": "10.0.13.2"
+          }
+        ]
+      },
+      {
+        "source": "R1",
+        "target": "S1",
+        "bandwidth": "10Mbps",
+        "utilization": "0%",
+        "link_type": "ethernet",
+        "interfaces": [
+          {
+            "device": "R1",
+            "interface": "GigabitEthernet0/0/0",
+            "ip": "192.168.1.1"
+          },
+          {
+            "device": "S1",
+            "interface": "Vlan1",
+            "ip": "192.168.1.1"
+          }
+        ]
+      },
+      {
+        "source": "R2",
+        "target": "R3",
+        "bandwidth": "1.544Mbps",
+        "utilization": "0%",
+        "link_type": "ethernet",
+        "interfaces": [
+          {
+            "device": "R2",
+            "interface": "Serial0/1/1",
+            "ip": "10.0.14.1"
+          },
+          {
+            "device": "R3",
+            "interface": "Serial0/1/1",
+            "ip": "10.0.14.2"
+          }
+        ]
+      },
+      {
+        "source": "R2",
+        "target": "S2",
+        "bandwidth": "10Mbps",
+        "utilization": "0%",
+        "link_type": "ethernet",
+        "interfaces": [
+          {
+            "device": "R2",
+            "interface": "GigabitEthernet0/0/0",
+            "ip": "192.168.2.1"
+          },
+          {
+            "device": "S2",
+            "interface": "Vlan1",
+            "ip": "192.168.2.1"
+          }
+        ]
+      }
+    ],
+    "hierarchy": {
+      "core": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "distribution": [],
+      "access": [
+        "S1",
+        "S2"
+      ]
+    },
+    "statistics": {
+      "total_devices": 5,
+      "total_links": 5,
+      "core_devices": 3,
+      "distribution_devices": 0,
+      "access_devices": 2,
+      "ospf_areas": 1
+    }
+  },
+  "generated_by": "Network Topology Generator",
+  "timestamp": "2026-04-28 00:33:40"
+}
