@@ -2,6 +2,15 @@
 
 **A Python-based network topology analyzer and visualizer using OSPF, VLANs, and automation.**
 
+# 🌐 Network Configuration Analyzer & Visualizer
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Cisco](https://img.shields.io/badge/Cisco-Networking-red?logo=cisco)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+**A Python-based network topology analyzer and visualizer using OSPF, VLANs, and automation.**
+
 ---
 
 ## 📌 Overview
@@ -17,16 +26,23 @@ The tool parses raw configuration data to extract critical networking informatio
 
 It then constructs an accurate representation of the network architecture and generates multiple output formats for analysis and visualization.
 
-### 🔍 Outputs Generated
+## ⚙️ How It Works
 
-* 📊 **JSON** – Structured, machine-readable data
-* 🖼️ **PNG** – Graphical topology diagram
-* 🌐 **HTML** – Interactive network visualization
+1. Configuration files are read from `sample_configs/`
+2. The parser extracts interfaces, IP addresses, VLANs, and OSPF data
+3. A graph-based topology is created using NetworkX
+4. The system generates:
+   - JSON (structured data)
+   - PNG (visual diagram)
+   - HTML (interactive topology)
 
-This project demonstrates the integration of **networking fundamentals, automation, and visualization**, providing an efficient solution for analyzing and understanding complex network infrastructures.
+## 💡 Use Cases
 
----
-
+- Network topology visualization
+- Configuration validation
+- Learning networking concepts (OSPF, VLANs)
+- Assisting network administrators in troubleshooting
+  
 ## 🛠️ Technologies Used
 
 * Python 3
@@ -142,7 +158,7 @@ output/topology.html
 ## 📸 Network Topology
 
 ![Topology](output/network_diagram.png)
-[Topology](output/topology.html)
+[Topology](output/topology.pdf)
 
 ---
 
