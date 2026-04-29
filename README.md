@@ -94,7 +94,7 @@ Follow these steps to run the project locally:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Network-Topology-Analyzer.git
+https://github.com/mamon404/Network-Topology-Analyzer
 cd Network-Topology-Analyzer
 ```
 
