@@ -26,6 +26,17 @@ The tool parses raw configuration data to extract critical networking informatio
 
 It then constructs an accurate representation of the network architecture and generates multiple output formats for analysis and visualization.
 
+## 🚀 Features
+
+* Parses Cisco router and switch configuration files
+* Extracts network topology information automatically
+* Builds a graph-based topology model
+* Generates structured JSON output
+* Creates visual network diagram (PNG)
+* Produces interactive HTML-based topology view
+
+---
+
 ## ⚙️ How It Works
 
 1. Configuration files are read from `sample_configs/`
@@ -61,16 +72,7 @@ It then constructs an accurate representation of the network architecture and ge
 
 ---
 
-## 🚀 Features
 
-* Parses Cisco router and switch configuration files
-* Extracts network topology information automatically
-* Builds a graph-based topology model
-* Generates structured JSON output
-* Creates visual network diagram (PNG)
-* Produces interactive HTML-based topology view
-
----
 
 ## 📂 Project Structure
 
